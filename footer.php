@@ -1,6 +1,6 @@
 	<footer>
 		<div class="footer-inner">
-			<img id="logo-footer" class="img-fluid" src="<?php bloginfo('template_url') ?>/assets/img/logo-thermos.png" alt="Thermos">
+			<img id="logo-footer" class="img-fluid" src="<?php bloginfo('template_url') ?>/assets/img/logo-libbey.png" alt="Thermos">
 			<ul class="nav-links-footer">
 				<li>El Rosal 4560, Huechuraba, Santiago, Chile.</li>
 				<li>|</li>
