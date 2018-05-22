@@ -1,0 +1,490 @@
+	.nav-tabs{
+		width: 100%;
+		.nav-item{
+			width: 33.333333%;
+			background-color: #f4f4f4;
+			.nav-link{
+				@include font-size(14px);
+				font-family: $greysans;
+				letter-spacing: 2px;
+				text-decoration: none;
+				text-align: center;
+				text-transform: uppercase;
+				color: black;
+				border-radius: 0;
+				border: none;
+				height: 100%;
+				&.active, &:hover, &:focus{
+					background-color: $gris-claro;
+				}
+				@media(max-width: 767px){
+					padding: 10px 2px;
+					@include font-size(10px);
+					letter-spacing: 0;
+				}
+			}
+		}
+	}
+	.tab-content{
+		padding: 30px;
+		.tab-pane{
+			p{
+				@include font-size(14px);
+				color: black;
+				letter-spacing: 2px;
+				line-height: 20px;
+			}
+		}
+	}
+
+
+
+
+// tabs
+.tab {
+    overflow: hidden;
+    //border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab a {
+    // background-color: inherit;
+    // float: left;
+    // border: none;
+    // outline: none;
+    // cursor: pointer;
+    // padding: 14px 16px;
+    // transition: 0.3s;
+    // display: inline-block;
+    // width: 33.333333%;
+    // background-color: #f4f4f4;
+    // border-radius: 0;
+    @include font-size(14px);
+    font-family: $greysans;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    float: left;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    width: 33.333333%;
+    cursor: pointer;
+    &.activo, &:hover, &:focus{
+    	background-color: $gris-claro;
+    }
+    @media(max-width: 767px){
+    	padding: 10px 2px;
+    	@include font-size(10px);
+    	letter-spacing: 0;
+    }
+
+
+
+}
+
+// /* Change background color of buttons on hover */
+// .tab a:hover {
+//     background-color: #ddd;
+// }
+
+// /* Create an active/current tablink class */
+// .tab a.activo {
+//     background-color: #ccc;
+// }
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 30px;
+  //  border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+
+    p{
+				@include font-size(14px);
+				color: black;
+				letter-spacing: 2px;
+				line-height: 20px;
+			}
+
+}
+
+
+// fin tabs
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+        @media (max-width: 767px){
+            right: 15px;
+        }
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    &:hover i {
+        color: #fff;
+        top: 5px;
+    }
+    i {
+      color: #fff;
+      margin: 0;
+      position: relative;
+      left: 16px;
+      top: 13px;
+      font-size: 19px;
+
+      transition: all 0.3s ease;
+    }
+}
+
+.banderita{
+	position: absolute;
+	background-color: transparent;
+	width: 4px;
+	height: 4px;
+	top: -100px;
+	@media(max-width:768px){
+		top: -60px;
+	}
+	@media(max-width:330px){
+		top: -104px;
+	}
+}
+.banderita-contacto{
+	position: absolute;
+	background-color: transparent;
+	width: 4px;
+	height: 4px;
+	top: -150px;
+	@media(max-width:768px){
+		top: -60px;
+	}
+	@media(max-width:330px){
+		top: -154px;
+	}
+}
+
+//lista con guiones
+@mixin lista-guion{
+
+		ul {
+		    list-style: none;
+		    padding-left: 0;
+		}
+
+		ul > li {
+		    margin-left: 15px;
+		}
+
+		/* Prevent nested li's from getting messed up */
+		ul > li::before {
+		    content: "- ";
+		    margin-left: -15px;
+		}
+}
+
+
+// titulo de las secciones  interiores
+
+.titulo-seccion{
+	min-height: 60px;
+	background-color: #000;
+	text-align: center;
+	position: relative;
+	h4{
+		@include centerer(true, true);
+		margin: 0;
+		@include font-size(26px);
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-family: $bebas;
+		width: 100%;
+		@media(max-width:768px){
+			@include font-size(16px);
+		}
+	}
+}
+
+/*====== cajas con thumb ======*/
+@mixin hoverzoom{
+   a{
+          overflow: hidden;
+          display: block;
+
+          img{
+                transition: all 0.5s ease;
+                transform: scale(1);
+               	opacity: 1;
+            }
+            &:hover, &:focus{
+              img{
+	                @media(min-width: 1025px){
+	            	opacity: 0.8;
+	                transform: scale(1.05);
+	                }
+                }// img producto
+            }
+      }
+}
+
+.box{
+	overflow: hidden;
+	width: 100%;
+	display:block;
+	cursor: pointer;
+	&.box-grilla{
+		margin-bottom: 40px;
+	}
+
+	@include hoverzoom;
+
+	.box-title{
+		position: relative;
+		min-height: 40px;
+		margin: 10px 0;
+		text-align: center;
+		i{
+			@include font-size(18px);
+		}
+		h3{
+			@include centerer(true, true);
+			font-family: $bebas;
+			@include font-size(20px);
+			text-transform: uppercase;
+			color: black;
+			letter-spacing: 3px;
+			width: 80%;
+		}
+		&.nombre-producto{
+			margin-top:20px;
+			h3{
+				@include font-size(16px);
+				line-height: 17px;
+				text-align:center;
+			}
+		}
+	}
+}
+
+.mt-50{
+	margin-top: 50px;
+}
+.mb-50{
+	margin-bottom: 50px;
+}
+
+.float-right{
+	float: right;
+}
+.bg-negro{
+	background: black;
+	height: 100%;
+	position: relative;
+}
+.center{
+	@include centerer(true, true);
+	@media(max-width:768px){
+		position: relative;
+		left: auto;
+		top: auto;
+		transform: none;
+		display: block;
+		margin: 0 auto;
+	}
+}
+.no-pad{
+	padding: 0 !important;
+}
+textarea {
+    resize: none;
+}
+@mixin link{
+  	transition: all 0.3s ease;
+  	cursor: pointer;
+  	&:hover, &:focus{
+    	text-decoration: none;
+    	color: black;
+  	}
+}
+.section{
+	padding: 50px 0 50px 0;
+}
+.section-title{
+
+  	margin-bottom: 50px;
+ }
+@mixin btn-blanco{
+	border-radius:0;
+	background-color: #fff;
+	border: 1px solid black;
+	font-family: $font-stack;
+	color: black;
+	text-transform: uppercase;
+	@include font-size(14px);
+	letter-spacing: 3px;
+	@include link;
+	cursor: pointer;
+	&:hover,&:focus{
+		background-color: $gris ;
+		border-color: transparent ;
+		color: white;
+	}
+}
+@mixin btn-negro{
+	border-radius:0;
+	background-color: #000;
+	border: 1px solid black;
+	font-family: $font-stack;
+	color: white;
+	text-transform: uppercase;
+	@include font-size(14px);
+	letter-spacing: 3px;
+	@include link;
+
+	&:hover,&:focus{
+		background-color: $gris;
+		border-color: transparent;
+		color: white;
+	}
+
+}
+.btn-transparente{
+	@include btn-blanco;
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	margin-top: 16px;
+	@media(max-width:767px){
+		margin-top: 8px;
+	}
+	&:hover,&:focus{
+		background-color: #EF1B1C;
+		border-color: transparent;
+		color: white;
+	}
+	&.float-right{
+		float: right;
+	}
+}
+.btn-blanco-lg{
+	@include btn-blanco;
+	margin: 60px 0;
+	padding: 10px 70px;
+
+}
+.btn-blanco-md{
+	@include btn-blanco;
+	margin: 20px 0;
+	padding: 10px 70px;
+
+}
+.btn-blanco-sm{
+	@include btn-blanco;
+	margin: 20px 0;
+	padding: 10px 40px;
+	border: 2px solid black;
+
+}
+.btn-negro-lg{
+	@include btn-negro;
+	padding: 10px 70px;
+}
+
+@mixin titulo-noticias{
+		z-index: 10;
+		@media(max-width:767px){
+			width: 90%;
+		}
+		h2{
+			font-family: 'Bebas';
+			@include font-size(70px);
+			color: white;
+			text-transform: uppercase;
+			text-align: right;
+			margin-bottom: -20px;
+			padding: 0;
+			z-index: 11;
+			&.text-left{
+				text-align: left;
+			}
+			@media(max-width:767px){
+				@include font-size(40px);
+				margin-bottom: -13px;
+			}
+
+		}
+		h3{
+			font-family: 'Hoefler';
+			@include font-size(40px);
+			color: white;
+			text-transform: uppercase;
+			text-align: right;
+			margin: 0;
+			padding: 0;
+			&.text-left{
+				text-align: left;
+			}
+			@media(max-width:767px){
+				@include font-size(25px);
+			}
+		}
+		h4{
+			font-family: 'Pacifico';
+			@include font-size(30px);
+			color: white;
+			text-transform: capitalize;
+			text-align: right;
+			margin: 0;
+			padding: 0;
+			@media(max-width:767px){
+				@include font-size(20px);
+			}
+		}
+
+}
+@mixin texto-noticias{
+	font-family: $greysans;
+	@include font-size(14px);
+	text-align: center;
+	color: white;
+		@media(max-width:768px){
+			@include font-size(14px);
+		}
+}
+@mixin texto-lista{
+	font-family: $greysans;
+	@include font-size(14px);
+	//text-align: center;
+	color: white;
+		@media(max-width:768px){
+			@include font-size(16px);
+		}
+}
+@mixin titulo-blanco{
+	font-family: 'Bebas';
+	@include font-size(25px);
+	color: white;
+	text-transform: uppercase;
+		@media(max-width:767px){
+			@include font-size(26px);
+		}
+}
+
+
