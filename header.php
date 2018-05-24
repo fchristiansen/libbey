@@ -22,7 +22,7 @@
     <?php if(is_home()) : ?>
     <title><?php bloginfo('name'); ?></title>
     <?php else : ?>
-    <title><?php wp_title('', true,''); ?> · Thermos</title>
+    <title><?php wp_title('', true,''); ?> · Libbey</title>
     <?php endif;?>
 	 <?php wp_head(); ?>
   </head>

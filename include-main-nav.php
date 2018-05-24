@@ -43,8 +43,8 @@
 					</li>
 				</ul>
 				<div class="rrss d-none d-lg-block">
-					<a href="https://www.facebook.com/thermoscl/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com/thermoscl/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="http://www.facebook.com/LibbeyChile/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://www.instagram.com/libbeycl/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					<!-- <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
 			<!-- 		<a href=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
 					<a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a> -->
