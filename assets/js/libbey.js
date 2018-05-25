@@ -33,10 +33,10 @@ $('#slider-productos').owlCarousel({
             items:1
         },
         768:{
-            items:3
+            items:4
         },
         991:{
-            items:3
+            items:4
         }
     }
 });
