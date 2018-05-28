@@ -55,23 +55,23 @@
   			<section class="info-producto  mt-50">
 
 						<div class="tab">
-						  <a class="btn btn-default tablinks" onclick="openCity(event, 'info')">descripción</a>
+						<!--   <a class="btn btn-default tablinks" onclick="openCity(event, 'info')">descripción</a> -->
 						  <a class="btn btn-default tablinks" onclick="openCity(event, 'specs')">especificaciones</a>
-						  <a class="btn btn-default tablinks" onclick="openCity(event, 'care')">cuidado y uso</a>
+						  <!-- <a class="btn btn-default tablinks" onclick="openCity(event, 'care')">cuidado y uso</a> -->
 						</div>
 
 						<!-- Tab content -->
-						<div id="info" class="tabcontent">
-								<?php echo get('informacion_informacion_del_producto'); ?>
-						</div>
+					<!-- 	<div id="info" class="tabcontent">
+								<?php//echo get('informacion_informacion_del_producto'); ?>
+						</div> -->
 
 						<div id="specs" class="tabcontent">
 							<?php echo get('informacion_especificaciones'); ?>
 						</div>
 
-						<div id="care" class="tabcontent">
-							<?php echo get('informacion_cuidado_y_uso'); ?>
-						</div>
+						<!-- <div id="care" class="tabcontent">
+							<?php // echo get('informacion_cuidado_y_uso'); ?>
+						</div> -->
 				</section>
   		</div>
 

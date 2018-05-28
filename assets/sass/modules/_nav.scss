@@ -8,8 +8,8 @@
 		}
 		img{
 			@media(max-width: 767px){
-			max-height: 30px;
-			margin-left: 10px;
+				max-height: 40px;
+				margin-left: 10px;
 			}
 		}
 
@@ -90,7 +90,7 @@
 	@media(max-width: 480px){
 
 		&.h-center{
-			margin: 10px auto !important;
+			//margin: 10px auto !important;
 		}
 
 	}
