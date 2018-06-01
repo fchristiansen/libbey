@@ -26,45 +26,16 @@
 				<img class="img-fluid mapa-chile-h" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile-h.png" alt="mapa chile">
 				<img class="img-fluid mapa-chile-v" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile.png" alt="mapa chile">
 			</div> -->
-
-			<div class="col-md-4 text-center">
-
-					<img class="img-fluid tit-ubicanos" src="<?php bloginfo('template_url'); ?>/assets/img/tit-ubicanos.png" alt="">
-						<?php
-						   $args = array (
-						       'post_type' => 'logos_tiendas',
-						       'posts_per_page'=> -1
-						     );
-						     $the_query = new WP_Query ($args);
-						 ?>
-						  <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-							<a class="box-logo d-block" href="<?php echo get('enlace_url_sitio'); ?>" target="_blank">
-								<img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-							</a>
-
-						<?php endwhile; else: ?>
-						<?php endif; ?>
-						<?php wp_reset_postdata()?>
-
-
-			</div>
-			<div class="col-md-8 hidden-xs">
-				<div class="row">
-					<img class="img-fluid mapa-r" src="<?php bloginfo('template_url'); ?>/assets/img/mapar.png" alt="mapa chile">
-				</div>
-			</div>
-
-
-			<!-- <div class="col-sm-6 hidden-xs">
+			<div class="col-sm-6 hidden-xs">
 				<img class="img-fluid mapa-l" src="<?php bloginfo('template_url'); ?>/assets/img/mapal.png" alt="mapa chile">
 			</div>
 			<div class="col-sm-6 hidden-xs">
 				<img class="img-fluid mapa-r" src="<?php bloginfo('template_url'); ?>/assets/img/mapar.png" alt="mapa chile">
 			</div>
+
 			<div class="col-sm-12 visible-xs">
 				<img class="img-fluid mapa-chile-v" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile.png" alt="mapa chile">
-			</div> -->
+			</div>
 
 		</div>
 

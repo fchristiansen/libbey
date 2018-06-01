@@ -242,6 +242,10 @@ section.news .box-bottom .box-imagen { position: absolute; right: 0; top: 170px;
 @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { section.news .box-bottom .box-imagen { top: 20px; } }
 @media (max-width: 767px) { section.news .box-bottom .box-imagen { position: relative; top: auto; right: auto; } }
 
+.ingredientes p, .pasos p { color: white; }
+
+.pasos { color: white; }
+
 section.instagram .caja-imagenes { background: #ccc; }
 
 section.contacto { position: relative; padding: 50px 0; }

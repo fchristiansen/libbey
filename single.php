@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 <?php include('include-main-nav.php'); ?>
 <?php
-if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+if ( have_posts() ) : while ( have_posts() ) : the_post();
 	$noticias = get_group('noticias');
 	 foreach($noticias as $noticia){
         //$imagen_vertical = $noticia['noticias_imagen_vertical'][1];
