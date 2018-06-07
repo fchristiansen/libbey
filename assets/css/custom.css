@@ -325,7 +325,8 @@ footer .footer-inner ul.nav-links-footer li:first-child { margin-left: 0; }
 footer .footer-inner ul.nav-links-footer li:last-child { margin-right: 0; }
 footer .footer-inner ul.nav-links-footer li a { color: #535353; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; cursor: pointer; }
 footer .footer-inner ul.nav-links-footer li a:hover, footer .footer-inner ul.nav-links-footer li a:focus { text-decoration: none; color: black; }
-footer .footer-inner .copy p { color: #b4b3b3; margin: 0 0 40px 0; }
+footer .footer-inner .copy p { color: #b4b3b3; margin: 0 0 3px 0; }
+footer .footer-inner .copy h2.date { color: #b4b3b3; font-size: 12px; margin-bottom: 20px; }
 footer .footer-inner .rrss-footer ul { margin: 0; padding: 0; }
 footer .footer-inner .rrss-footer ul li { display: inline-block; }
 footer .footer-inner .rrss-footer ul li a { display: block; cursor: pointer; margin-right: 15px; margin-left: 15px; color: #0f0f0f; }

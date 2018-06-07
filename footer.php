@@ -1,3 +1,4 @@
+
 	<footer>
 		<div class="footer-inner">
 			<img id="logo-footer" class="img-fluid" src="<?php bloginfo('template_url') ?>/assets/img/logo-libbey.png" alt="Thermos">
@@ -12,6 +13,9 @@
 			</ul>
 			<div class="copy">
 				<p> <i class="fa fa-copyright" aria-hidden="true"></i> <?php echo date('Y'); ?>. Todos los derechos reservados</p>
+				<h2 class="date"><?php echo actual_date(); ?></h2>
+
+
 			</div>
 				<div class="rrss-footer">
 					<ul>

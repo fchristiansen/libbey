@@ -4,8 +4,8 @@
 	<div class="container-fluid no-pad">
 		<div class="caja-imagenes">
 				<div data-is
-				    data-is-api="<?php bloginfo('template_url'); ?>/assets/js/instashow2/api/"
-					data-is-source="@thermoscl"
+				    data-is-api="<?php bloginfo('template_url'); ?>/assets/js/instashow3/api/"
+					data-is-source="@libbeycl"
 				    data-is-width="auto"
 				    data-is-height="auto"
 				    data-is-columns="4"
