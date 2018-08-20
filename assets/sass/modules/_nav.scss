@@ -1,4 +1,8 @@
 .navbar{
+	#logo-navbar-middle{
+		max-width:170px;
+		height: auto;
+	}
 	.logo-xs{
 		padding: 0;
 		@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
